@@ -7,6 +7,7 @@ A full-stack Library Management System built with Django (Backend) and React (Fr
 - Python 3.x
 - Node.js and npm
 - Virtual environment (recommended)
+- MySQL Server
 
 ## Project Structure
 
@@ -34,23 +35,62 @@ Django-Library-Management/
    source venv/bin/activate
    ```
 
-3. Install the required Python packages:
+3. Configure MySQL Database:
+   ```bash
+   # Install MySQL Server if not already installed
+   # On Ubuntu/Debian
+   sudo apt-get install mysql-server
+   
+   # On macOS using Homebrew
+   brew install mysql
+   
+   # Start MySQL service
+   # On Ubuntu/Debian
+   sudo service mysql start
+   
+   # On macOS
+   brew services start mysql
+   
+   # Create MySQL database and user
+   mysql -u root -p
+   
+   # In MySQL prompt
+   CREATE DATABASE library_db;
+   CREATE USER 'library_user'@'localhost' IDENTIFIED BY 'your_password';
+   GRANT ALL PRIVILEGES ON library_db.* TO 'library_user'@'localhost';
+   FLUSH PRIVILEGES;
+   EXIT;
+   
+   # Update database settings in backend/settings.py
+   DATABASES = {
+       'default': {
+           'ENGINE': 'django.db.backends.mysql',
+           'NAME': 'library_db',
+           'USER': 'library_user',
+           'PASSWORD': 'your_password',
+           'HOST': 'localhost',
+           'PORT': '3306',
+       }
+   }
+   ```
+
+4. Install the required Python packages:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Apply database migrations:
+5. Apply database migrations:
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
 
-5. Create a superuser (optional):
+6. Create a superuser (optional):
    ```bash
    python manage.py createsuperuser
    ```
 
-6. Run the Django development server:
+7. Run the Django development server:
    ```bash
    python manage.py runserver
    ```
@@ -97,6 +137,7 @@ The backend provides the following API endpoints:
 - Backend: Django REST framework(Django==5.1.7)
 - Frontend: React with Axios for API calls
 - Styling: CSS with modern responsive design
+- Database: MySQL
 
 ## Features
 
@@ -105,3 +146,15 @@ The backend provides the following API endpoints:
 - Loading states
 - Error handling
 - Beautiful card-based UI
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
