@@ -120,6 +120,9 @@ The frontend will be available at `http://localhost:3000`
 
 The backend provides the following API endpoints:
 
+### Swagger Endpoint Documentation
+- `http://localhost:8000/swagger/`
+
 ### Authentication Endpoints
 - `POST http://127.0.0.1:8000/api/admin/signup/` - Register a new admin user
 - `POST http://127.0.0.1:8000/api/admin/login/` - Login for admin users
@@ -131,6 +134,7 @@ The backend provides the following API endpoints:
 - `GET http://127.0.0.1:8000/api/books/{id}/` - Get details of a specific book (requires authentication)
 - `PUT http://127.0.0.1:8000/api/books/{id}/` - Update a book (requires authentication)
 - `DELETE http://127.0.0.1:8000/api/books/{id}/` - Delete a book (requires authentication)
+
 
 ## Development
 
