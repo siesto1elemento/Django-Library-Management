@@ -17,7 +17,7 @@ Technical Specifications:
 Framework: Django (please specify the version you’re using).(**Django==5.1.7**)
 API: Implement RESTful API endpoints using Django REST Framework.(**done**)
 Database: Use MySQL to store data.(**done**)
-Front-End (Optional): You may use any library or framework (such as ReactJS, Angular, or Django templates) to build a minimal UI, especially for the Student view.(**ToDo**)
+Front-End (Optional): You may use any library or framework (such as ReactJS, Angular, or Django templates) to build a minimal UI, especially for the Student view.(**done**)
 Project Structure & Documentation:
 Include a README file in your GitHub repository with setup instructions, project (**ToDo**)  structure explanation, and any assumptions made.(**ToDo**)
 Provide inline documentation in your code and, if possible, include tests (unit or integration) to validate your functionality.(**ToDo**)
