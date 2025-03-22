@@ -28,7 +28,7 @@ Submission Details:
 
 Deadline: You have 48 hours to complete and submit your project. Please ensure you meet the deadline as specified.
 Submission Format:
-Upload your solution to a GitHub repository and reply to this email with the repository link.(**ToDo**)
+Upload your solution to a GitHub repository and reply to this email with the repository link.(**done**)
 The repository should include clear instructions for setting up and running the project.(**done**)
 Confidentiality:
 Please note that the attached project files are the property of Keywordio AB and are provided solely for test purposes. Do not share these files externally.
