@@ -4,6 +4,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
 
+#Overriding the default user model
 class AdminManager(BaseUserManager):
     def create_user(self, email, password=None):
         if not email:
@@ -21,6 +22,8 @@ class AdminManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
+
+#Model for admin
 class Admin(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
     is_active = models.BooleanField(default=True)
@@ -30,7 +33,7 @@ class Admin(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = 'email'
 
-
+#Model for book
 class Book(models.Model):
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=255)

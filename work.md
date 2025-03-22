@@ -19,16 +19,16 @@ API: Implement RESTful API endpoints using Django REST Framework.(**done**)
 Database: Use MySQL to store data.(**done**)
 Front-End (Optional): You may use any library or framework (such as ReactJS, Angular, or Django templates) to build a minimal UI, especially for the Student view.(**done**)
 Project Structure & Documentation:
-Include a README file in your GitHub repository with setup instructions, project (**ToDo**)  structure explanation, and any assumptions made.(**ToDo**)
+Include a README file in your GitHub repository with setup instructions, project (**ToDo**)  structure explanation, and any assumptions made.(**Todo**)
 Provide inline documentation in your code and, if possible, include tests (unit or integration) to validate your functionality.(**ToDo**)
 Authentication & Error Handling:
-Implement proper authentication (e.g., token-based) for admin endpoints.(**ToDo**)
+Implement proper authentication (e.g., token-based) for admin endpoints.(**done**)
 Ensure that appropriate HTTP status codes and error messages are returned,(**ToDo**)particularly in scenarios like duplicate admin records or invalid input.(**ToDo**)
 Submission Details:
 
 Deadline: You have 48 hours to complete and submit your project. Please ensure you meet the deadline as specified.
 Submission Format:
 Upload your solution to a GitHub repository and reply to this email with the repository link.(**ToDo**)
-The repository should include clear instructions for setting up and running the project.(**ToDo**)
+The repository should include clear instructions for setting up and running the project.(**done**)
 Confidentiality:
 Please note that the attached project files are the property of Keywordio AB and are provided solely for test purposes. Do not share these files externally.
